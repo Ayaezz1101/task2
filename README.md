@@ -21,12 +21,12 @@ A premium, high-fidelity mobile application UI built with **Flutter**. This proj
 ### Splash & Onboarding
 | Splash Screen | Step 1 | Step 2 | Step 3 |
 | :---: | :---: | :---: | :---: |
-| <img src="assets/screenshots/splash.jpg" width="180"> | <img src="assets/screenshots/onboarding1.jpg" width="180"> | <img src="assets/screenshots/onboarding2.jpg" width="180"> | <img src="assets/screenshots/onboarding3.jpg" width="180"> |
+| <img src="assets\screenshots\splash.jpg" width="180"> | <img src="assets\screenshots\onboarding1.jpg" width="180"> | <img src="assets\screenshots\onboarding2.jpg" width="180"> | <img src="assets\screenshots\onboarding3.jpg" width="180"> |
 
 ### Authentication Flow
 | Sign In | Sign Up | OTP Verification | Welcome Home |
 | :---: | :---: | :---: | :---: |
-| <img src="assets/screenshots/signin.jpg" width="180"> | <img src="assets/screenshots/signup.jpg" width="180"> | <img src="assets/screenshots/verify.jpg" width="180"> | <img src="assets/screenshots/welcome.jpg" width="180"> |
+| <img src="assets\screenshots\signin.jpg" width="180"> | <img src="assets\screenshots\signup.jpg" width="180"> | <img src="assets\screenshots\verify.jpg" width="180"> | <img src="assets\screenshots\welcome.jpg" width="180"> |
 
 ## Installation
 
