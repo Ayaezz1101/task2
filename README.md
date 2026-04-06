@@ -6,27 +6,33 @@ A premium, high-fidelity mobile application UI built with **Flutter**. This proj
 [https://github.com/Ayaezz1101/task2](https://github.com/Ayaezz1101/task2)
 
 ## Key Features
-* **Fully Responsive**: Built using `flutter_screenutil` to ensure a consistent experience across all screen sizes.
-* **Smart Animations**: Custom `FadeRoute` transitions for a seamless user journey.
-* **Reusable Components**: Highly modular architecture with custom widgets (TextFields, Buttons, OTP inputs).
-* **Clean Architecture**: Clear separation between UI, theme, and logic.
+Secure Authentication: Fully integrated with Supabase Auth (Email/Password).
+
+Safety First (OTP): Implemented One-Time Password (OTP) verification for new sign-ups and password recovery.
+
+Dynamic Data Management: Products are no longer hardcoded; they are fetched dynamically from a PostgreSQL database on Supabase.
+
+Smart Search & Filtering: Optimized Server-side queries to filter products and categories directly from the database for better performance.
+
+Efficient State Management: Utilized Provider to manage data flow and ensure selective UI rebuilds, enhancing the app's responsiveness.
+
+Fully Responsive: Built using flutter_screenutil for consistent scaling across all devices.
 
 ## Tech Stack
-* **Framework**: Flutter SDK
-* **Language**: Dart
-* **Environment**: Developed on Windows via  & VS Code.
+Frontend: Flutter SDK (Dart)
+
+Backend as a Service (BaaS): Supabase
+
+Database: PostgreSQL (Cloud-hosted)
+
+State Management: Provider
+
+Environment: Developed on Windows via WSL/Ubuntu & VS Code.
 
 ## Application Screenshots
 
-### Splash & Onboarding
-| Splash Screen | Step 1 | Step 2 | Step 3 |
-| :---: | :---: | :---: | :---: |
-| <img src="assets\screenshots\splash.jpg" width="180"> | <img src="assets\screenshots\onboarding1.jpg" width="180"> | <img src="assets\screenshots\onboarding2.jpg" width="180"> | <img src="assets\screenshots\onboarding3.jpg" width="180"> |
+### Splash & OnboardingSplash ScreenStep 1Step 2Step 3<img src="assets/screenshots/splash.jpg" width="180"><img src="assets/screenshots/onboarding1.jpg" width="180"><img src="assets/screenshots/onboarding2.jpg" width="180"><img src="assets/screenshots/onboarding3.jpg" width="180">### Authentication FlowSign InSign UpOTP VerificationReset Password<img src="assets/screenshots/signin.jpg" width="180"><img src="assets/screenshots/signup.jpg" width="180"><img src="assets/screenshots/verify.jpg" width="180"><img src="assets/screenshots/reset password.jpg" width="180">### Product DiscoveryHome ScreenDetails Screen<img src="assets/screenshots/home screen.jpg" width="180"><img src="assets/screenshots/details screen.jpg" width="180">
 
-### Authentication Flow
-| Sign In | Sign Up | OTP Verification | Welcome Home |
-| :---: | :---: | :---: | :---: |
-| <img src="assets\screenshots\signin.jpg" width="180"> | <img src="assets\screenshots\signup.jpg" width="180"> | <img src="assets\screenshots\verify.jpg" width="180"> | <img src="assets\screenshots\welcome.jpg" width="180"> |
 
 ## Installation
 
@@ -52,8 +58,9 @@ Follow these steps to run the project locally:
 ## Project Structure
 ```text
 lib/
-├── data/          # Onboarding content models
-├── theme/         # Global AppTheme and color constants
-├── services/      # Custom PageRoute transitions
-├── widgets/       # Reusable components (CustomTextField, PrimaryButton, OTPBox)
-└── pages/         # Screen implementations (Splash, Onboarding, Sign In, Sign Up, Verify, Home)
+├── providers/      # Centralized State Management (Product & Auth Providers)
+├── models/         # Data models for Supabase integration
+├── theme/          # Global AppTheme and color constants
+├── services/       # Supabase client & API services
+├── widgets/        # Reusable UI components (CustomTextField, OTPBox...)
+└── pages/          # Screen implementations (splash , onboarding ,Auth, Home, details)
