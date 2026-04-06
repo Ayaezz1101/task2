@@ -27,8 +27,7 @@ class OnboardingItem extends StatelessWidget {
           top: 521.h,
           left: 10.w,
           child: SizedBox(
-            width: 280
-                .w,
+            width: 280.w,
             child: Text(model.title, style: textTheme.displayLarge),
           ),
         ),

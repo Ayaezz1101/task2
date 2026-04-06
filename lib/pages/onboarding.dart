@@ -7,7 +7,6 @@ import 'package:task2/wigets/indicator.dart';
 import 'package:task2/wigets/onboarding_button.dart';
 import 'package:task2/wigets/onboarding_item.dart';
 
-
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -38,29 +37,30 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           ),
 
           Positioned(
-            top:678.h,
+            top: 678.h,
             left: 10.w,
             child: CustomPageIndicator(currentIndex: _currentIndex),
           ),
-          SizedBox(height: 3,) , 
-Positioned(
-  top: 678.h,
-  left: 282.w,
-  child: NextStepButton(
-    onPressed: () {
-      if (_currentIndex < onboardingContents.length - 1) {
-      
-        _controller.nextPage(
-          duration: const Duration(milliseconds: 300),
-          curve: Curves.easeOut,
-        );
-      } else {
-        
-       Navigator.pushReplacement(context, FadeRoute(page: const SignInScreen()));
-      }
-    },
-  ),
-),
+          SizedBox(height: 3),
+          Positioned(
+            top: 678.h,
+            left: 282.w,
+            child: NextStepButton(
+              onPressed: () {
+                if (_currentIndex < onboardingContents.length - 1) {
+                  _controller.nextPage(
+                    duration: const Duration(milliseconds: 300),
+                    curve: Curves.easeOut,
+                  );
+                } else {
+                  Navigator.pushReplacement(
+                    context,
+                    FadeRoute(page: const SignInScreen()),
+                  );
+                }
+              },
+            ),
+          ),
         ],
       ),
     );

@@ -3,7 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task2/theme/themeData.dart';
 
 class OTPBox extends StatelessWidget {
-  const OTPBox({super.key});
+  final TextEditingController controller; // إضافة المتحكم
+
+  const OTPBox({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +16,13 @@ class OTPBox extends StatelessWidget {
         color: AppTheme.fieldGrey,
         borderRadius: BorderRadius.circular(5.r),
       ),
-      child: TextField(
+      child: TextField(controller: controller,
         textAlign: TextAlign.center,
         keyboardType: TextInputType.number,
         maxLength: 1,
+        onChanged: (value) {
+          if (value.length == 1) FocusScope.of(context).nextFocus(); 
+        },
         decoration: const InputDecoration(
           counterText: "",
           border: InputBorder.none,
