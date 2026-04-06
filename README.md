@@ -31,7 +31,22 @@ Environment: Developed on Windows via WSL/Ubuntu & VS Code.
 
 ## Application Screenshots
 
-### Splash & OnboardingSplash ScreenStep 1Step 2Step 3<img src="assets/screenshots/splash.jpg" width="180"><img src="assets/screenshots/onboarding1.jpg" width="180"><img src="assets/screenshots/onboarding2.jpg" width="180"><img src="assets/screenshots/onboarding3.jpg" width="180">### Authentication FlowSign InSign UpOTP VerificationReset Password<img src="assets/screenshots/signin.jpg" width="180"><img src="assets/screenshots/signup.jpg" width="180"><img src="assets/screenshots/verify.jpg" width="180"><img src="assets/screenshots/reset password.jpg" width="180">### Product DiscoveryHome ScreenDetails Screen<img src="assets/screenshots/home screen.jpg" width="180"><img src="assets/screenshots/details screen.jpg" width="180">
+### Splash & Onboarding
+| Splash Screen | Step 1 | Step 2 | Step 3 |
+| :---: | :---: | :---: | :---: |
+| <img src="assets\screenshots\splash.jpg" width="180"> | <img src="assets\screenshots\onboarding1.jpg" width="180"> | <img src="assets\screenshots\onboarding2.jpg" width="180"> | <img src="assets\screenshots\onboarding3.jpg" width="180"> |
+
+
+### authentication
+| sign in | sign up | verify | reset password |
+| :---: | :---: | :---: | :---: |
+| <img src="assets\screenshots\signin.jpg" width="180"> | <img src="assets\screenshots\signup.jpg" width="180"> | <img src="assets\screenshots\verify screen.jpg" width="180"> | <img src="assets\screenshots\reset password.jpg" width="180"> |
+
+### home && details
+| home | details |
+| :---: | :---: |
+| <img src="assets\screenshots\home screen.jpg" width="180"> | <img src="assets\screenshots\details screen.jpg" width="180"> | 
+
 
 
 ## Installation
